@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="240.0" prefWidth="313.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ativ_c.ativ_d.Ativ_D_Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="text" layoutX="62.0" layoutY="64.0" />
+            <Button fx:id="invert" layoutX="111.0" layoutY="113.0" mnemonicParsing="false" onAction="#invert" text="Inverter" />
+            <TextField fx:id="invertText" layoutX="62.0" layoutY="160.0" />
+         </children></AnchorPane>
+   </children>
+</VBox>
