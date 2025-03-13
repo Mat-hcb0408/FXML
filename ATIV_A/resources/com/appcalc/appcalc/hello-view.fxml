@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appcalc.appcalc.AppCalcController">
+<children>
+<Pane prefHeight="469.0" prefWidth="450.0">
+    <children>
+        <Label layoutX="134.0" layoutY="26.0" text="Calculadora Simples" textFill="#0d125e">
+            <font>
+                <Font name="System Bold" size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="76.0" layoutY="97.0" text="Número 01:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="76.0" layoutY="152.0" text="Número 02:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="num1" layoutX="161.0" layoutY="89.0" prefHeight="38.0" prefWidth="245.0" />
+        <TextField fx:id="num2" layoutX="161.0" layoutY="143.0" prefHeight="38.0" prefWidth="245.0" />
+        <Button layoutX="207.0" layoutY="224.0" mnemonicParsing="false" onAction="#ClickTeste" text="CALCULAR">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+            <Label fx:id="resultado" layoutX="225.0" layoutY="303.0" text="Resposta" />
+    </children>
+</Pane>
+</children>
+        </VBox>
