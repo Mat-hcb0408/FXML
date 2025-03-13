@@ -11,13 +11,13 @@
    <HBox style="-fx-spacing: 10;">
       <children>
          <Label text="Usuario" />
-         <TextField />
+         <TextField fx:id "usuario" />
       </children>
    </HBox>
    <HBox style="-fx-spacing: 18;">
       <children>
          <Label text="Senha" />
-         <TextField />
+         <TextField fx:id "senha" />
       </children>
    </HBox>
    <Button mnemonicParsing="false" onAction="#verificarLogin" text="Login" />
