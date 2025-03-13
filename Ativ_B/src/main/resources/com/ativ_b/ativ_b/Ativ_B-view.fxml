@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ativ_b.ativ_b.Ativ_B_Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="234.0" prefWidth="360.0">
+      <children>
+          <Button layoutX="156.0" layoutY="133.0" onAction="#verify" text="Verificar" />
+      
+          <Label fx:id="instructionText" layoutX="110.0" layoutY="40.0" prefHeight="26.0" prefWidth="142.0" text="Insira um número:">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+         <TextField fx:id="number" layoutX="106.0" layoutY="88.0" />
+         <Label fx:id="result" layoutX="109.0" layoutY="194.0" prefHeight="26.0" prefWidth="142.0" textFill="RED">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+</VBox>
