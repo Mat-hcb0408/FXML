@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="289.0" prefWidth="313.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ativ_f.ativ_f.NumerosAleatorios_Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="247.0" prefWidth="273.0">
+         <children>
+            <Button fx:id="gerar" onAction="#gerarNum" layoutX="111.0" layoutY="148.0" mnemonicParsing="false" text="Gerar" />
+            <TextField fx:id="min" layoutX="62.0" layoutY="63.0" />
+            <TextField fx:id="max" layoutX="63.0" layoutY="111.0" />
+            <Label layoutX="68.0" layoutY="24.0" prefHeight="27.0" prefWidth="139.0" text="Insira o intervalo ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="result" layoutX="84.0" layoutY="195.0" prefHeight="27.0" prefWidth="107.0" textFill="#1700ab">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</VBox>
