@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ativ_m.ativ_m.TemporizadorSimplesController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <StackPane prefHeight="150.0" prefWidth="200.0">
+      <children>
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <TextField fx:id="tempo" alignment="CENTER" onAction="#cont" promptText="Digite o tempo aqui" />
+                <Button onAction="#cont" text="iniciar" />
+            
+                <Label fx:id="resultado" text="result" />
+            </children>
+         </VBox>
+      </children>
+   </StackPane>
+</VBox>
