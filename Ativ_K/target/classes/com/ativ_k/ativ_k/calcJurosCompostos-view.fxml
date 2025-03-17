@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ativ_k.ativ_k.CalcJurosCompostos_Controller">
+
+  <padding>
+    <Insets bottom="20" left="20" right="20" top="20" />
+  </padding>
+
+  <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Calculadora de Juros Compostos" />
+
+  <TextField fx:id="capital" promptText="Capital Inicial(R$)" />
+  <TextField fx:id="taxaJuros" promptText="Taxa de Juros(%/mês)" />
+  <TextField fx:id="meses" promptText="Tempo(meses)" />
+
+  <Button onAction="#calcular" text="Calcular" />
+
+  <Label fx:id="montante" style="-fx-font-size: 14px; -fx-text-fill: blue;" />
+</VBox>
