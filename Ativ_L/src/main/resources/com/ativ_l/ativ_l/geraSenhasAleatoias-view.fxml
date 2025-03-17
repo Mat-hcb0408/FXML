@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.ativ_l.ativ_l.GeraSenhasAleatoias_Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="215.0">
+         <children>
+            <Label layoutX="10.0" layoutY="4.0" text="Gerador de Senhas Aleatórias">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+             <Label layoutX="36.0" layoutY="46.0" text="Insira o tamanho da senha:" />
+            <TextField fx:id="tamanho" layoutX="33.0" layoutY="69.0" />
+             <Button onAction="#gerar" layoutX="68.0" layoutY="110.0" mnemonicParsing="false" text="Gerar Senha" />
+            <TextField fx:id="senha" layoutX="34.0" layoutY="155.0" promptText="nova senha" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
