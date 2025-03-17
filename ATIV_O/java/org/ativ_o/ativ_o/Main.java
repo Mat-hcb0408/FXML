@@ -3,27 +3,22 @@ package org.ativ_o.ativ_o;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class Main extends Application {
-    public static void main(String[] args) {
-        launch(args);
-    }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
-        // Carrega o arquivo FXML
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("tradutor.fxml"));
-        AnchorPane root = loader.load();
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("tradutor.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        stage.setTitle("Temporizador Simples");
+        stage.setScene(scene);
+        stage.show();
+    }
 
-        // Cria a cena
-        Scene scene = new Scene(root, 400, 300);
-
-        // Configura o palco (janela) e exibe
-        primaryStage.setTitle("Tradutor Inglês-Português");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+    public static void main(String[] args) {
+        launch();
     }
 }
-
